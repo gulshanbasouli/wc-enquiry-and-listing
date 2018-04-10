@@ -106,7 +106,7 @@ add_action( 'woocommerce_after_add_to_cart_button', 'WBC_WooMessageGeneration' )
     $msg = "We have received your enquiry. ".$message."<br>Here is the Unique discussion Id : ".$chat_unique_id." to start conversation with us. <a href='".get_permalink( 4795 )."' target='_blank'>Start conversation</a>";
 		$headers = "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= 'From: TravelQuest <no-reply@aimmath.com>';
+    $headers .= 'From: TravelQuest <no-reply@webchefz.com>';
     $sent_message = wp_mail( $to, $subject, $msg, $headers);
 
 
@@ -122,7 +122,7 @@ add_action( 'woocommerce_after_add_to_cart_button', 'WBC_WooMessageGeneration' )
     $msg = "We have received enquiry. <br> For vendor: ".$author_display_name." And Product: ".get_the_title($product_id)."<br> Enquiry By :  ".$user_ID ."<br> Email: ".$user_email. "<br> Enquiry Title : ".$title." <br> Enquiry Message: ".$message." <br> Here is the Unique discussion Id : ".$chat_unique_id." to start conversation with us. <a href='".get_permalink( 4795 )."' target='_blank'>Start conversation</a>";
     $headers      = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= 'From: TravelQuest <no-reply@aimmath.com>';    
+    $headers .= 'From: TravelQuest <no-reply@webchefz.com>';    
     $sent_message = wp_mail( $to, $subject, $msg, $headers);
 
 
@@ -203,7 +203,7 @@ add_action( 'woocommerce_after_add_to_cart_button', 'WBC_WooMessageGeneration' )
         $msg = $_REQUEST['replyMessage'];
 		$headers = "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= 'From: TravelQuest <no-reply@aimmath.com>';     
+    $headers .= 'From: TravelQuest <no-reply@webchefz.com>';     
 		$sent_message = wp_mail( $to, $subject, $msg, $headers); 
   
        if ( $sent_message ) {  
@@ -319,7 +319,7 @@ add_action( 'woocommerce_after_add_to_cart_button', 'WBC_WooMessageGeneration' )
           $Vendor_msg          = $replyMessage;
           $Vendor_headers      = "MIME-Version: 1.0" . "\r\n";
           $Vendor_headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-          $Vendor_headers .= 'From: TravelQuest <no-reply@aimmath.com>';    
+          $Vendor_headers .= 'From: TravelQuest <no-reply@webchefz.com>';    
           $Vendor_sent_message = wp_mail( $Vendor_to, $Vendor_subject, $Vendor_msg, $Vendor_headers);
 
           // Administrator Email
@@ -333,7 +333,7 @@ add_action( 'woocommerce_after_add_to_cart_button', 'WBC_WooMessageGeneration' )
           $msg = "We have received enquiry. <br> For vendor: ".$author_display_name." And Product: ".get_the_title($product_id)."<br> Enquiry By :  ".$user_id ."<br> Email: ".$user_email. "<br> Enquiry Title : ".$title." <br> Enquiry Message: ".$replyMessage." <br> Here is the Unique discussion Id : ".$enquiryId." to start conversation with us. <a href='".get_permalink( 4795 )."' target='_blank'>Start conversation</a>";
           $headers      = "MIME-Version: 1.0" . "\r\n";
           $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-          $headers .= 'From: TravelQuest <no-reply@aimmath.com>';    
+          $headers .= 'From: TravelQuest <no-reply@webchefz.com>';    
           $sent_message = wp_mail( $to, $subject, $msg, $headers);
 
 
