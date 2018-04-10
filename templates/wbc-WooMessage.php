@@ -45,22 +45,6 @@ $author_id = $post->post_author;
         display: none;
       }
     </style>
-<!-- STARTS HTML -->
-
-
-<!-- <form name="myForm" onsubmit="return(validate());">
-  <div class="editabel" id="send" contenteditable=""></div><span class="alertMessage">This is not a valid message</span>
-  <input type="button" value="submit" onclick="return(validate());"/>
-</form> -->
-
-
-
-<!-- ENDS HTML -->
-
-
-
-
-
   
 <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <script type="text/javascript">      
@@ -192,40 +176,7 @@ $author_id = $post->post_author;
     };
   }
 
-//  function validate() {
-//       var message = jQuery("#message").html();
-//       var matches = message.match(/\d+/g);
 
-//       var emailPat = /^(\".*\"|[A-Za-z]\w*)@(\[\d{1,3}(\.\d{1,3}){3}]|[A-Za-z]\w*(\.[A-Za-z]\w*)+)$/
-//       var phoneno = /^\d{10}$/;  
-//       var Url = "^[A-Za-z]+://[A-Za-z0-9-_]+\\.[A-Za-z0-9-_%&\?\/.=]+$";      
-//       var EmailmatchArray = message.match(emailPat);      
-//       var isURL = message.match(Url);
-
-//        var v = wordCount( message );   
-//       jQuery.each( v.words , function( i, l ){
-//         if(l.match(phoneno) || l.match(emailPat) || l.match(Url)) {
-//               jQuery(".alertMessage").show();
-
-//             jQuery('#message').html(message.replace(
-//               new RegExp(l, 'g'), '<span class=someclass>'+l+'</span>'
-
-//             ));
-
-//             setTimeout(function(){
-//               jQuery(".alertMessage").hide();
-//             },10000);
-
-//             return false;
-
-//         }
-//       });
-
-// }
-
-
-    </script>
-<script type="text/javascript">
 function show(target) {
     document.getElementById(target).style.display = 'block';
 }
